@@ -13,7 +13,10 @@ public class StartButton : MonoBehaviour {
        
         //Reset The Score
         PlayerPrefs.DeleteKey("score");
-        
+
+        //Reset The Lives
+        PlayerPrefs.DeleteKey("lives");
+
         //Load the first level
         SceneManager.LoadScene("Level 1");
     }
